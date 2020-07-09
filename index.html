@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--http://beeker.io/exit-intent-popup-script-tutorial -->
 <html lang="PT-BR">
 	<head>
 		<title>Acredita</title>
@@ -8,6 +9,27 @@
 		<link rel="stylesheet" href="estilo.css"/>
 		<script src="https://kit.fontawesome.com/ca795b52ec.js" crossorigin="anonymous"></script>
 
+		<script type="text/javascript" src="http://beeker.io/lab/exit-intent-popup/bioep.min.js"></script>
+		<script type="text/javascript" src="jspopup/bioep.min.js"></script>
+		
+		<script type="text/javascript">
+		  bioEp.init({
+			html: '<div id="bio_ep_content">' +
+			'<span>NÃO VAI EMBORA AINDA</span>' +
+			'<span>Você sabia que 69% dos brasileiros não guardaram dinheiro nos últimos 12 meses?</span>' +
+			'<a href="https://a-credita.netlify.app/" class="bio_btn">Quero poupar!</a>' +
+			'</div>',
+			css: '#bio_ep {width: 390px; height: 270px; color: #008000; background-color: #fafafa; text-align: center;}' +
+			'#bio_ep_content {padding: 40px 0 0 0; font-family: "Arial";}' +
+			'#bio_ep_content span:nth-child(2) {display: block; color: #000000; font-size: 20px; font-weight: 600;}' +
+			'#bio_ep_content span:nth-child(3) {display: block; font-size: 30px;}' +
+			'#bio_ep_content span:nth-child(4) {display: block; margin: -5px 0 0 0; font-size: 30px; font-weight: 600;}' +
+			'.bio_btn {display: inline-block; margin: 8px 0 0 0; padding: 9px; color: #fafafa; font-size: 20px; font-weight: 600; background-color: #70bb39; border: 1px solid #47ad0b; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; border-radius: 0; text-decoration: none;}',
+			fonts: ['//fonts.googleapis.com/css?family=Titillium+Web:300,400,600'],
+			cookieExp: 0
+		});
+		</script>
+	
 		<!-- Facebook Pixel Code-->
 		<script>
 			!function(f, b, e, v, n, t, s)
